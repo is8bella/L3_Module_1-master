@@ -12,7 +12,7 @@ public class Algorithms {
 			}
 			currentIndex++;
 		}
-		return -1; //<- this needs changing
+		return -1; 
 	}
 	//Add other methods here
 	
@@ -26,14 +26,25 @@ public class Algorithms {
 		return count;
 	}
 	
-	public static int findTallest(List<Double> peeps) {
+	public static double findTallest(List<Double> peeps) {
 		double x = 0;
+		double tall = 0;
 		for (Double doublecheck : peeps) {
-			x = doublecheck;
+			x = doublecheck; 
+			}
+		if(x == 6.6) {
+			tall = x;
 		}
-		if() {
+		return tall;
+		}
+	
+	public static String findlongestWord(List<String> words) {
+		String empt = "";
+		for (String length : words) {
 			
 		}
 	}
+		
+		
 	
 }
