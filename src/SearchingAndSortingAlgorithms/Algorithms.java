@@ -1,5 +1,6 @@
 package SearchingAndSortingAlgorithms;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Algorithms {
@@ -38,11 +39,32 @@ public class Algorithms {
 		return tall;
 		}
 	
-	public static String findlongestWord(List<String> words) {
-		String empt = "";
-		for (String length : words) {
+	public static String findLongestWord(List<String> words) {
+		String longword = "";
+		for (String string : words) {
+			if(string.length() > longword.length()) {
+				longword = string;
+			}
+		}
+		return longword;
+	}
+	
+	public static boolean containsSOS(List<String> message1) {
+		String SOS = " ... --- ... ";
+		for (String string : message1) {
+			if(string.equals(SOS)) {
+				return true;
+			}
+		}
+		return false;
+	}
+	
+	public static List<String> sortDNA(List<String> unsortedSequences){
+		String previousSequence = "";
+		for (String string : unsortedSequences) {
 			
 		}
+		
 	}
 		
 		
